@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Fitness & Nutrition Guide | M Kodanda Sai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    },
+                    colors: {
+                        sage: {
+                            50: '#f4f7f5',
+                            100: '#e3ebe6',
+                            200: '#c7d8ce',
+                            500: '#52796f',
+                            600: '#354f52',
+                            700: '#2f3e46',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f4f7f5 0%, #eaf2ef 50%, #faf8f5 100%);
+            background-attachment: fixed;
+        }
+        .peaceful-blob {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(90px);
+            z-index: -1;
+            opacity: 0.55;
+            animation: floatSlow 18s ease-in-out infinite alternate;
+        }
+        @keyframes floatSlow {
+            0% { transform: translate(0px, 0px) scale(1); }
+            100% { transform: translate(30px, -30px) scale(1.08); }
+        }
+        section {
+            scroll-margin-top: 5rem;
+        }
+    </style>
+</head>
+<body class="text-slate-700 font-sans antialiased selection:bg-sage-500 selection:text-white">
+
+    <!-- Calm Ambient Background Shapes -->
+    <div class="peaceful-blob w-96 h-96 bg-emerald-100 top-10 left-10"></div>
+    <div class="peaceful-blob w-[28rem] h-[28rem] bg-teal-100 bottom-10 right-10" style="animation-delay: -7s;"></div>
+    <div class="peaceful-blob w-80 h-80 bg-amber-50 top-1/2 left-1/3" style="animation-delay: -12s;"></div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-sage-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="inline-flex items-center gap-2 text-sage-600 hover:text-sage-700 font-semibold text-sm transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                <span>Back to Portfolio</span>
+            </a>
+            <nav class="hidden lg:flex space-x-5 text-xs font-semibold uppercase tracking-wider text-slate-600">
+                <a href="#before-day-1" class="text-emerald-700 hover:text-sage-600 transition-colors">0. Before You Start</a>
+                <a href="#my-story" class="text-amber-700 hover:text-sage-600 transition-colors">★ My 10-Day Stuck Story</a>
+                <a href="#process" class="hover:text-sage-600 transition-colors">1. How Body Works</a>
+                <a href="#blood-report" class="hover:text-sage-600 transition-colors">2. Blood Report</a>
+                <a href="#calculator" class="hover:text-sage-600 transition-colors">3. Calculator</a>
+                <a href="#nutrition" class="hover:text-sage-600 transition-colors">4. Food Math</a>
+                <a href="#weighing" class="hover:text-sage-600 transition-colors">5. Weigh-In</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-16">
+
+        <!-- Hero Section -->
+        <section class="text-center max-w-3xl mx-auto">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-sage-100 text-sage-600 text-xs font-semibold tracking-wider uppercase mb-3">
+                Visual Step-by-Step Transformation Guide
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-serif font-semibold text-sage-700 leading-tight mb-4">
+                Simple Visuals. Real Struggles. Peaceful Progress.
+            </h1>
+            <p class="text-base text-slate-600 leading-relaxed mb-6">
+                No confusing medical jargon or fake promises. Before you touch a weight or cut calories, learn how to prepare your body, build your calendar, and survive the frustrating days when the scale refuses to move.
+            </p>
+        </section>
+
+        <!-- STEP 0: BEFORE YOU EVEN START (BLOOD TEST + CALENDAR) -->
+        <section id="before-day-1" class="bg-gradient-to-br from-emerald-900 via-sage-700 to-teal-900 text-white rounded-3xl p-6 sm:p-10 shadow-xl">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="px-3 py-1 rounded-full bg-emerald-400/20 border border-emerald-300/40 text-emerald-200 text-xs font-bold uppercase tracking-wider">
+                    Rule #1: Do This Before Day 1
+                </span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-serif font-semibold mb-3">
+                Before You Start: Get Your Blood Test & Make a Calendar!
+            </h2>
+            <p class="text-emerald-100 text-sm leading-relaxed mb-8 max-w-3xl">
+                Most people fail in week 2 because they jump straight into starving themselves without knowing what is happening inside their body or having a visual calendar to tick off every day. Do these two things <strong>before Day 1</strong>:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Action 1: Blood Test -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="w-10 h-10 rounded-xl bg-emerald-400/20 flex items-center justify-center text-2xl">🩸</span>
+                            <div>
+                                <span class="text-[11px] uppercase tracking-wider text-emerald-300 font-bold">Step A</span>
+                                <h3 class="text-lg font-bold text-white">Get a Full Blood Report First</h3>
+                            </div>
+                        </div>
+                        <p class="text-xs text-emerald-100 leading-relaxed mb-4">
+                            If your Vitamin D, Vitamin B12, Iron, or Thyroid (TSH) are off, you will feel exhausted at 5:30 AM and your body will stubbornly hold onto weight. Fix your internal engine first so your hard work actually pays off—and schedule a follow-up test every 3 to 4 months to see your health markers improve!
+                        </p>
+                    </div>
+                    <a href="#blood-report" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-300 hover:text-white">
+                        <span>↓ Jump to Blood Report Checker below</span>
+                    </a>
+                </div>
+
+                <!-- Action 2: Make a Calendar -->
+                <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="w-10 h-10 rounded-xl bg-amber-400/20 flex items-center justify-center text-2xl">🗓️</span>
+                            <div>
+                                <span class="text-[11px] uppercase tracking-wider text-amber-300 font-bold">Step B</span>
+                                <h3 class="text-lg font-bold text-white">Make a Physical or Digital Calendar</h3>
+                            </div>
+                        </div>
+                        <p class="text-xs text-emerald-100 leading-relaxed mb-4">
+                            Don't keep your goals only in your head. Draw a 30-day or 90-day calendar with clear milestone dates. Every single day you hit your morning workout, eat your measured meals, and complete your evening walk, <strong>put a green tick (✅) on that date</strong>. On days when the weighing scale doesn't move, your calendar ticks prove you are still winning.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-7 gap-1.5 text-center bg-black/25 p-3 rounded-xl border border-white/10 text-[10px]">
+                        <div class="p-1 rounded bg-emerald-500/30 text-white font-bold">Mon ✅</div>
+                        <div class="p-1 rounded bg-emerald-500/30 text-white font-bold">Tue ✅</div>
+                        <div class="p-1 rounded bg-emerald-500/30 text-white font-bold">Wed ✅</div>
+                        <div class="p-1 rounded bg-emerald-500/30 text-white font-bold">Thu ✅</div>
+                        <div class="p-1 rounded bg-emerald-500/30 text-white font-bold">Fri ✅</div>
+                        <div class="p-1 rounded bg-emerald-500/30 text-white font-bold">Sat ✅</div>
+                        <div class="p-1 rounded bg-amber-500/40 text-white font-bold">Sun 🎯</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MY REAL EXPERIENCE: THE 10-DAY STUCK WEIGHT STORY -->
+        <section id="my-story" class="bg-amber-50/90 backdrop-blur-md rounded-3xl border-2 border-amber-200 p-6 sm:p-10 shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="px-3 py-1 rounded-full bg-amber-200 text-amber-900 text-xs font-bold uppercase tracking-wider">
+                    ★ Real Talk From My Own Journey
+                </span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-serif font-semibold text-sage-700 mb-4">
+                "For 10 Straight Days My Weight Didn't Move a Single Gram..."
+            </h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Story Text -->
+                <div class="lg:col-span-7 space-y-4 text-sm text-slate-700 leading-relaxed">
+                    <p>
+                        I want to be 100% honest with you about the most irritating part of losing weight—because nobody warns you about it, and it makes 90% of people quit.
+                    </p>
+                    <p class="p-4 rounded-2xl bg-white border border-amber-200 font-medium text-sage-700">
+                        When I started my journey at <strong>126 kg</strong> (dropping down to <strong>118 kg</strong>, then <strong>114 kg</strong>, and pushing toward my <strong>85–90 kg</strong> goal), there was a month where <strong>for 10 days straight, my weight did not move at all</strong>. Even after that, in between weeks, the scale would randomly get stuck again!
+                    </p>
+                    <p>
+                        Imagine waking up at <strong>5:30 AM</strong> every day, walking on the incline treadmill, lifting weights for 45 minutes, working a full <strong>9-to-7 office job</strong>, weighing every gram of uncooked rice and paneer, doing your evening walks... and when you step on the scale on Day 6, Day 8, Day 10, <strong>the number is frozen</strong>.
+                    </p>
+                    <p>
+                        <strong>It is super irritating!</strong> Your mind will scream: <em>"Why am I doing all this hard work if nothing is happening?!"</em>
+                    </p>
+                    <p class="text-emerald-900 font-semibold bg-emerald-100/80 p-4 rounded-2xl border border-emerald-300">
+                        💡 Here is the secret: Even when the scale is stuck for 10 days, your body IS burning fat every single day! When fat cells empty out, they temporarily fill with water to hold their shape. If you don't quit and keep ticking your calendar for those 10 irritating days, your body suddenly flushes the water overnight (called the <strong>"Whoosh Effect"</strong>) and the scale drops 1.5 to 2 kg all at once!
+                    </p>
+                </div>
+
+                <!-- Visual Diagram of the "Stuck Scale vs Real Fat Loss" -->
+                <div class="lg:col-span-5 bg-white rounded-2xl p-6 border border-amber-200 shadow-sm space-y-4">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-amber-900 text-center">
+                        📉 Why Your Scale Gets Stuck (The "Whoosh Effect")
+                    </h3>
+
+                    <!-- Visual Step 1 -->
+                    <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-3">
+                        <span class="text-2xl">😤</span>
+                        <div class="text-xs">
+                            <strong class="text-slate-800 block">Days 1 to 10 (The Irritating Plateau)</strong>
+                            <span class="text-slate-600">You burn fat daily, but sore muscles & empty fat cells hold water. <strong>Scale says: 0 kg lost.</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Visual Step 2 -->
+                    <div class="p-3.5 rounded-xl bg-amber-50 border border-amber-200 flex items-center gap-3">
+                        <span class="text-2xl">🗓️</span>
+                        <div class="text-xs">
+                            <strong class="text-amber-900 block">What Most People Do vs. What You Will Do</strong>
+                            <span class="text-slate-600">Most people get angry and quit on Day 8. <strong>You trust your calendar and keep going.</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Visual Step 3 -->
+                    <div class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center gap-3">
+                        <span class="text-2xl">🎉</span>
+                        <div class="text-xs">
+                            <strong class="text-emerald-900 block">Day 11–14 (The Sudden Drop!)</strong>
+                            <span class="text-slate-600">Your body releases the trapped water overnight. <strong>Scale suddenly drops 1.5 to 2 kg!</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- My Real Weight Log Proof -->
+                    <div class="pt-3 border-t border-amber-100 text-center">
+                        <span class="text-[11px] font-bold uppercase text-slate-400 block mb-2">My Real Progress Through Plateaus</span>
+                        <div class="flex items-center justify-between text-xs font-bold bg-sage-50 px-3 py-2 rounded-lg border border-sage-200">
+                            <span class="text-rose-700">126 kg</span>
+                            <span>→</span>
+                            <span class="text-amber-700">118 kg</span>
+                            <span>→</span>
+                            <span class="text-emerald-700">114 kg</span>
+                            <span>→</span>
+                            <span class="text-sage-700">Goal: 85–90 kg 🎯</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 1: VISUAL DIAGRAM OF FAT LOSS & MUSCLE GAIN -->
+        <section id="process" class="bg-white/85 backdrop-blur-md rounded-3xl border border-sage-100 p-6 sm:p-10 shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="w-8 h-8 rounded-full bg-sage-500 text-white flex items-center justify-center font-bold text-sm">1</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-sage-500">Visualizing the Process</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-serif font-semibold text-sage-700 mb-6">
+                How Your Body Loses Weight vs. Gains Muscle
+            </h2>
+
+            <!-- Visual Energy Balance Infographic -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <!-- Fat Loss Visual Card -->
+                <div class="rounded-2xl border border-emerald-200 bg-emerald-50/50 overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=800&q=80" alt="Morning Walking Fat Loss" class="h-44 w-full object-cover">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="px-2.5 py-1 rounded-full bg-emerald-200 text-emerald-900 text-xs font-bold uppercase">Fat Loss Formula</span>
+                            <h3 class="text-xl font-bold text-sage-700 mt-2 mb-3">Eat Less Than You Burn (Calorie Deficit)</h3>
+                            
+                            <!-- Mini Visual Equation -->
+                            <div class="bg-white rounded-xl p-4 border border-emerald-200 mb-4 flex items-center justify-between text-center">
+                                <div>
+                                    <span class="text-2xl block">🍽️</span>
+                                    <span class="text-xs font-bold text-slate-700">Food Intake</span>
+                                    <span class="text-[11px] text-emerald-600 block">2,000 kcal</span>
+                                </div>
+                                <span class="text-lg font-bold text-slate-400">−</span>
+                                <div>
+                                    <span class="text-2xl block">🔥</span>
+                                    <span class="text-xs font-bold text-slate-700">Daily Burn</span>
+                                    <span class="text-[11px] text-rose-600 block">2,500 kcal</span>
+                                </div>
+                                <span class="text-lg font-bold text-slate-400">=</span>
+                                <div class="bg-emerald-100 px-3 py-1.5 rounded-lg">
+                                    <span class="text-lg block">📉</span>
+                                    <span class="text-xs font-bold text-emerald-900">-500 kcal/day</span>
+                                    <span class="text-[10px] text-emerald-700 block">Burns Stored Fat</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600">
+                            <strong>Speed:</strong> 1 kg of fat = <strong>7,700 kcal</strong>. A 500–750 kcal daily deficit safely burns <strong>0.5 to 1 kg per week</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Muscle Gain Visual Card -->
+                <div class="rounded-2xl border border-teal-200 bg-teal-50/50 overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Weight Training Muscle Growth" class="h-44 w-full object-cover">
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="px-2.5 py-1 rounded-full bg-teal-200 text-teal-900 text-xs font-bold uppercase">Muscle Growth Formula</span>
+                            <h3 class="text-xl font-bold text-sage-700 mt-2 mb-3">Stimulus + High Protein + Deep Sleep</h3>
+                            
+                            <!-- Mini Visual Equation -->
+                            <div class="bg-white rounded-xl p-4 border border-teal-200 mb-4 flex items-center justify-between text-center">
+                                <div>
+                                    <span class="text-2xl block">🏋️</span>
+                                    <span class="text-xs font-bold text-slate-700">Lift Weights</span>
+                                    <span class="text-[10px] text-slate-500 block">Micro-tears</span>
+                                </div>
+                                <span class="text-lg font-bold text-slate-400">+</span>
+                                <div>
+                                    <span class="text-2xl block">🥚</span>
+                                    <span class="text-xs font-bold text-slate-700">High Protein</span>
+                                    <span class="text-[10px] text-slate-500 block">1.6g–2g / kg</span>
+                                </div>
+                                <span class="text-lg font-bold text-slate-400">+</span>
+                                <div>
+                                    <span class="text-2xl block">😴</span>
+                                    <span class="text-xs font-bold text-slate-700">7–8h Sleep</span>
+                                    <span class="text-[10px] text-teal-700 block">= Stronger Muscle</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600">
+                            <strong>Speed:</strong> Natural muscle grows at <strong>0.25 to 0.5 kg per month</strong>. Beginners can lose fat and build muscle at the same time!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 2: VISUAL BLOOD REPORT GUIDE & CHECKER -->
+        <section id="blood-report" class="bg-white/85 backdrop-blur-md rounded-3xl border border-sage-100 p-6 sm:p-10 shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="w-8 h-8 rounded-full bg-sage-500 text-white flex items-center justify-center font-bold text-sm">2</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-sage-500">Internal Health Check</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-serif font-semibold text-sage-700 mb-4">
+                Check Your Blood Report (What's Missing & Needs Attention?)
+            </h2>
+
+            <!-- Visual Banner + 4 Icon Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center mb-8">
+                <div class="lg:col-span-5 rounded-2xl overflow-hidden border border-sage-200 h-60">
+                    <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80" alt="Blood Test Lab Check" class="w-full h-full object-cover">
+                </div>
+                <div class="lg:col-span-7 grid grid-cols-2 gap-3 text-xs">
+                    <div class="p-4 rounded-xl bg-amber-50/70 border border-amber-200">
+                        <span class="text-2xl block mb-1">☀️</span>
+                        <strong class="text-amber-900 block text-sm">Vitamin D</strong>
+                        <p class="text-slate-600 mt-1">If low: Bone pain, low mood, slow fat loss. Fix with morning sun & D3.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-rose-50/70 border border-rose-200">
+                        <span class="text-2xl block mb-1">⚡</span>
+                        <strong class="text-rose-900 block text-sm">Vitamin B12 & Iron</strong>
+                        <p class="text-slate-600 mt-1">If low: Constant fatigue, dizzy workouts, brain fog. Common in vegetarians.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-purple-50/70 border border-purple-200">
+                        <span class="text-2xl block mb-1">🦋</span>
+                        <strong class="text-purple-900 block text-sm">Thyroid (TSH)</strong>
+                        <p class="text-slate-600 mt-1">Controls metabolic speed. High TSH slows calorie burn and holds water.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-teal-50/70 border border-teal-200">
+                        <span class="text-2xl block mb-1">🩸</span>
+                        <strong class="text-teal-900 block text-sm">HbA1c & Lipids</strong>
+                        <p class="text-slate-600 mt-1">Shows 3-month blood sugar & heart health. Improves fast with daily walks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Lab Input -->
+            <div class="bg-sage-50/80 p-6 rounded-2xl border border-sage-200">
+                <h3 class="text-sm font-bold text-sage-700 mb-4">🔍 Enter Your Blood Report Values Below to See What Needs Attention:</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-4">
+                    <div class="bg-white p-3 rounded-xl border border-sage-200">
+                        <label class="block text-[11px] font-bold text-sage-700">Vitamin D</label>
+                        <input type="number" step="0.1" id="lab-vitd" placeholder="ng/mL" class="w-full mt-1 px-2 py-1.5 rounded border border-sage-200 text-sm">
+                        <span class="text-[10px] text-slate-400">Aim: 30–60</span>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl border border-sage-200">
+                        <label class="block text-[11px] font-bold text-sage-700">Vitamin B12</label>
+                        <input type="number" step="1" id="lab-b12" placeholder="pg/mL" class="w-full mt-1 px-2 py-1.5 rounded border border-sage-200 text-sm">
+                        <span class="text-[10px] text-slate-400">Aim: 400+</span>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl border border-sage-200">
+                        <label class="block text-[11px] font-bold text-sage-700">Hemoglobin</label>
+                        <input type="number" step="0.1" id="lab-hb" placeholder="g/dL" class="w-full mt-1 px-2 py-1.5 rounded border border-sage-200 text-sm">
+                        <span class="text-[10px] text-slate-400">Aim: 13.5+</span>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl border border-sage-200">
+                        <label class="block text-[11px] font-bold text-sage-700">Thyroid TSH</label>
+                        <input type="number" step="0.1" id="lab-tsh" placeholder="mIU/L" class="w-full mt-1 px-2 py-1.5 rounded border border-sage-200 text-sm">
+                        <span class="text-[10px] text-slate-400">Aim: 0.5–4.0</span>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl border border-sage-200">
+                        <label class="block text-[11px] font-bold text-sage-700">HbA1c Sugar</label>
+                        <input type="number" step="0.1" id="lab-hba1c" placeholder="%" class="w-full mt-1 px-2 py-1.5 rounded border border-sage-200 text-sm">
+                        <span class="text-[10px] text-slate-400">Aim: &lt; 5.7%</span>
+                    </div>
+                    <div class="bg-white p-3 rounded-xl border border-sage-200">
+                        <label class="block text-[11px] font-bold text-sage-700">Triglycerides</label>
+                        <input type="number" step="1" id="lab-trig" placeholder="mg/dL" class="w-full mt-1 px-2 py-1.5 rounded border border-sage-200 text-sm">
+                        <span class="text-[10px] text-slate-400">Aim: &lt; 150</span>
+                    </div>
+                </div>
+                <button onclick="analyzeBloodReport()" class="px-5 py-2.5 bg-sage-600 hover:bg-sage-700 text-white font-semibold text-xs rounded-xl shadow-sm transition-all">
+                    Check My Report Results
+                </button>
+                <div id="blood-results" class="hidden mt-4 p-4 rounded-xl bg-white border border-sage-200 space-y-2 text-xs"></div>
+            </div>
+        </section>
+
+        <!-- STEP 3: INTERACTIVE CALORIE & MACRO CALCULATOR -->
+        <section id="calculator" class="bg-white/90 backdrop-blur-md rounded-3xl border-2 border-sage-200 p-6 sm:p-10 shadow-md">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="w-8 h-8 rounded-full bg-sage-500 text-white flex items-center justify-center font-bold text-sm">3</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-sage-500">Interactive Calculator</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-serif font-semibold text-sage-700 mb-2">
+                Calculate Your Daily Calorie Intake
+            </h2>
+            <p class="text-slate-600 text-sm mb-6">
+                Enter your <strong>Sex, Height, Weight, and Age</strong> to see how much you should eat to lose fat or build muscle.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Inputs -->
+                <div class="lg:col-span-6 space-y-4 bg-sage-50/70 p-6 rounded-2xl border border-sage-100">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-sage-700 mb-1">Biological Sex</label>
+                            <select id="calc-sex" class="w-full px-3 py-2.5 rounded-xl border border-sage-200 bg-white text-sm">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-sage-700 mb-1">Age (Years)</label>
+                            <input type="number" id="calc-age" value="24" min="15" max="90" class="w-full px-3 py-2.5 rounded-xl border border-sage-200 bg-white text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-sage-700 mb-1">Height (cm)</label>
+                            <input type="number" id="calc-height" value="178" min="120" max="230" class="w-full px-3 py-2.5 rounded-xl border border-sage-200 bg-white text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-sage-700 mb-1">Current Weight (kg)</label>
+                            <input type="number" step="0.1" id="calc-weight" value="114" min="35" max="250" class="w-full px-3 py-2.5 rounded-xl border border-sage-200 bg-white text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-sage-700 mb-1">Daily Activity Level</label>
+                        <select id="calc-activity" class="w-full px-3 py-2.5 rounded-xl border border-sage-200 bg-white text-sm">
+                            <option value="1.2">Sedentary (Office job, minimal exercise)</option>
+                            <option value="1.375">Lightly Active (1–3 workouts/wk or daily walks)</option>
+                            <option value="1.55" selected>Moderately Active (3–5 workouts/wk + daily walks)</option>
+                            <option value="1.725">Very Active (6+ intense workouts/wk)</option>
+                        </select>
+                    </div>
+
+                    <button onclick="calculateCalories()" class="w-full py-3.5 bg-sage-500 hover:bg-sage-600 text-white font-semibold rounded-xl shadow-sm transition-all">
+                        Calculate My Calories
+                    </button>
+                </div>
+
+                <!-- Results -->
+                <div class="lg:col-span-6 space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-2xl bg-sage-50 border border-sage-200 text-center">
+                            <span class="text-xs text-slate-500 block">Resting Burn (BMR)</span>
+                            <span id="res-bmr" class="text-2xl font-bold text-sage-700">2,138 kcal</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-sage-50 border border-sage-200 text-center">
+                            <span class="text-xs text-slate-500 block">Maintenance (TDEE)</span>
+                            <span id="res-tdee" class="text-2xl font-bold text-sage-700">3,313 kcal</span>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-200">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-bold uppercase text-emerald-800">📉 Fat Loss Intake (-500 to -750 kcal)</span>
+                            <span class="text-xs font-semibold text-emerald-700">~0.5–0.8 kg/wk</span>
+                        </div>
+                        <p id="res-loss" class="text-3xl font-bold text-emerald-900 mb-2">2,613 kcal / day</p>
+                        <p id="res-loss-macros" class="text-xs text-emerald-800"></p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-teal-50 border border-teal-200">
+                        <div class="flex justify-between items-center mb-1">
+                            <span class="text-xs font-bold uppercase text-teal-800">💪 Muscle Gain Intake (+250 kcal)</span>
+                            <span class="text-xs font-semibold text-teal-700">Lean Bulk</span>
+                        </div>
+                        <p id="res-gain" class="text-2xl font-bold text-teal-900">3,563 kcal / day</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 4: VISUAL GUIDE TO CALCULATING FOOD CALORIES & MACROS -->
+        <section id="nutrition" class="bg-white/85 backdrop-blur-md rounded-3xl border border-sage-100 p-6 sm:p-10 shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="w-8 h-8 rounded-full bg-sage-500 text-white flex items-center justify-center font-bold text-sm">4</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-sage-500">Visual Nutrition Math</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-serif font-semibold text-sage-700 mb-6">
+                How to Calculate Food Calories & Macros Easily
+            </h2>
+
+            <!-- 3 Macro Visual Cards with Photos -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="rounded-2xl overflow-hidden border border-sage-200 bg-white shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=600&q=80" alt="Protein Sources Eggs Paneer" class="h-36 w-full object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="font-bold text-sage-700">1. Protein</h3>
+                            <span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">1g = 4 Calories</span>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-2">Builds & protects muscle. Eat <strong>1.6g – 2g per kg</strong> of goal body weight.</p>
+                        <p class="text-[11px] font-semibold text-sage-600">Foods: Eggs, Paneer, Whey, Curd, Buttermilk, Chicken, Dal</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden border border-sage-200 bg-white shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80" alt="Carbohydrates Oats and Rice" class="h-36 w-full object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="font-bold text-sage-700">2. Carbs</h3>
+                            <span class="px-2.5 py-1 rounded-full bg-teal-100 text-teal-800 text-xs font-bold">1g = 4 Calories</span>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-2">Fuels your workouts & brain focus during your 9-to-7 job.</p>
+                        <p class="text-[11px] font-semibold text-sage-600">Foods: Rolled Oats, Uncooked Rice, Veggies, Fruits</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden border border-sage-200 bg-white shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=600&q=80" alt="Healthy Fats Nuts and Ghee" class="h-36 w-full object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="font-bold text-sage-700">3. Healthy Fats</h3>
+                            <span class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold">1g = 9 Calories</span>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-2">Supports hormones & vitamin absorption. Measure carefully (high calorie!).</p>
+                        <p class="text-[11px] font-semibold text-sage-600">Foods: Pure Ghee, Whole Egg Yolks, Omega-3, Nuts</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Plate & Weighing Diagram -->
+            <div class="bg-amber-50/80 border border-amber-200 rounded-2xl p-6 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+                <div class="md:col-span-4 text-center bg-white p-4 rounded-xl border border-amber-200">
+                    <span class="text-4xl block mb-1">⚖️</span>
+                    <p class="font-bold text-amber-900 text-sm">40g Uncooked Rice</p>
+                    <p class="text-xs text-slate-500">≈ 140 kcal (Always exact)</p>
+                    <div class="my-2 border-t border-dashed border-amber-200"></div>
+                    <p class="font-bold text-rose-700 text-sm">1 Bowl Cooked Rice</p>
+                    <p class="text-xs text-slate-500">❓ 150 to 350 kcal (Guesswork!)</p>
+                </div>
+                <div class="md:col-span-8 space-y-2">
+                    <h4 class="font-bold text-amber-900 text-base">Why You Must Weigh Food Raw / Uncooked</h4>
+                    <p class="text-xs text-slate-700 leading-relaxed">
+                        When you cook rice or oats, they absorb water, changing their weight completely. Use a digital kitchen scale to weigh <strong>raw rice (40g), raw oats (50g), and raw paneer (100g)</strong> before cooking, and log them daily.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 5: VISUAL DAILY MEAL & WORKOUT PLAN -->
+        <section id="meal-plan" class="bg-white/85 backdrop-blur-md rounded-3xl border border-sage-100 p-6 sm:p-10 shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="w-8 h-8 rounded-full bg-sage-500 text-white flex items-center justify-center font-bold text-sm">5</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-sage-500">Daily Routine Visualized</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-serif font-semibold text-sage-700 mb-6">
+                My Daily Routine (5:30 AM Workout + Measured Meals)
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-sage-50 rounded-2xl p-5 border border-sage-200 text-center">
+                    <span class="text-3xl block mb-2">🏃‍♂️</span>
+                    <span class="text-[11px] font-bold uppercase text-sage-500">5:30 AM • Morning Gym</span>
+                    <h4 class="font-bold text-sage-700 text-sm mt-1 mb-2">Cardio + Weights</h4>
+                    <p class="text-xs text-slate-600">Incline treadmill walk + 10m cycling + 45m strength training (pushups, pullup prep, weights).</p>
+                </div>
+
+                <div class="bg-sage-50 rounded-2xl p-5 border border-sage-200 text-center">
+                    <span class="text-3xl block mb-2">🥤</span>
+                    <span class="text-[11px] font-bold uppercase text-sage-500">8:30 AM • Shake</span>
+                    <h4 class="font-bold text-sage-700 text-sm mt-1 mb-2">Buttermilk & Oats Shake</h4>
+                    <p class="text-xs text-slate-600">Post-workout buttermilk + shake with 50g oats, 1 scoop whey, cocoa powder & 200ml milk.</p>
+                </div>
+
+                <div class="bg-sage-50 rounded-2xl p-5 border border-sage-200 text-center">
+                    <span class="text-3xl block mb-2">🍲</span>
+                    <span class="text-[11px] font-bold uppercase text-sage-500">1:30 PM • Main Meal</span>
+                    <h4 class="font-bold text-sage-700 text-sm mt-1 mb-2">Paneer, Rice & Eggs</h4>
+                    <p class="text-xs text-slate-600">40g uncooked rice, 100g paneer, mixed veggies, ghee, garlic, pink salt, 200ml curd & 4 whole eggs.</p>
+                </div>
+
+                <div class="bg-sage-50 rounded-2xl p-5 border border-sage-200 text-center">
+                    <span class="text-3xl block mb-2">🌙</span>
+                    <span class="text-[11px] font-bold uppercase text-sage-500">7:30 PM • Evening</span>
+                    <h4 class="font-bold text-sage-700 text-sm mt-1 mb-2">35-Min Walk & Omega-3</h4>
+                    <p class="text-xs text-slate-600">Peaceful 30–40 min evening walk after the 9-to-7 job, Omega-3 softgel, and tick the calendar ✅.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEP 6: VISUAL GUIDE ON WHEN & HOW TO CHECK WEIGHT -->
+        <section id="weighing" class="bg-white/85 backdrop-blur-md rounded-3xl border border-sage-100 p-6 sm:p-10 shadow-sm">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="w-8 h-8 rounded-full bg-sage-500 text-white flex items-center justify-center font-bold text-sm">6</span>
+                <span class="text-xs font-bold uppercase tracking-wider text-sage-500">Weigh-In Protocol</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-serif font-semibold text-sage-700 mb-6">
+                When & How to Check Your Weight (Visual Checklist)
+            </h2>
+
+            <!-- 4 Visual Step Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                <div class="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-white flex items-center justify-center text-2xl shadow-sm mb-3">🌅</div>
+                    <h4 class="font-bold text-sage-700 text-sm mb-1">1. Empty Stomach</h4>
+                    <p class="text-xs text-slate-600">First thing in the morning after using the washroom, before drinking water.</p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-white flex items-center justify-center text-2xl shadow-sm mb-3">🧱</div>
+                    <h4 class="font-bold text-sage-700 text-sm mb-1">2. Hard Flat Floor</h4>
+                    <p class="text-xs text-slate-600">Place the digital scale on flat floor tiles—never on carpets or rugs.</p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-white flex items-center justify-center text-2xl shadow-sm mb-3">👕</div>
+                    <h4 class="font-bold text-sage-700 text-sm mb-1">3. Same Light Clothes</h4>
+                    <p class="text-xs text-slate-600">Wear minimal clothing so heavy jeans or shoes don't add fake weight.</p>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-emerald-50/70 border border-emerald-200 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-white flex items-center justify-center text-2xl shadow-sm mb-3">📅</div>
+                    <h4 class="font-bold text-sage-700 text-sm mb-1">4. Trust the Average</h4>
+                    <p class="text-xs text-slate-600">If it gets stuck for 10 days, don't panic! Compare bi-weekly trends.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MOTIVATION GALLERY & MINDSET QUOTES -->
+        <section id="motivation" class="space-y-6">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-xs font-bold uppercase tracking-wider text-sage-500 block mb-1">Stay Inspired</span>
+                <h2 class="text-2xl sm:text-3xl font-serif font-semibold text-sage-700">
+                    Visual Motivation When the Scale Gets Stuck
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group bg-white/85 rounded-3xl overflow-hidden border border-sage-100 shadow-sm flex flex-col">
+                    <div class="h-44 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Peaceful Nature" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <blockquote class="font-serif italic text-sage-700 text-sm leading-relaxed mb-3">
+                            "When the scale stays stuck for 10 days, remember: water weight can hide fat loss on a machine, but it can never erase the work you did."
+                        </blockquote>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-sage-500">Beat The Plateau</span>
+                    </div>
+                </div>
+
+                <div class="group bg-white/85 rounded-3xl overflow-hidden border border-sage-100 shadow-sm flex flex-col">
+                    <div class="h-44 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Morning Gym" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <blockquote class="font-serif italic text-sage-700 text-sm leading-relaxed mb-3">
+                            "Win the first hour at 5:30 AM, tick your calendar, and let the results take care of themselves."
+                        </blockquote>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-sage-500">Quiet Consistency</span>
+                    </div>
+                </div>
+
+                <div class="group bg-white/85 rounded-3xl overflow-hidden border border-sage-100 shadow-sm flex flex-col">
+                    <div class="h-44 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80" alt="Healthy Food" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <blockquote class="font-serif italic text-sage-700 text-sm leading-relaxed mb-3">
+                            "Simple, measured home-cooked meals repeated daily beat extreme crash diets every single time."
+                        </blockquote>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-sage-500">Mindful Fuel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-sage-200/60 bg-white/60 backdrop-blur-sm py-8 mt-12">
+        <div class="max-w-5xl mx-auto px-4 text-center text-xs text-slate-500 space-y-2">
+            <p class="font-medium text-sage-700">Created by M Kodanda Sai — Discipline, Patience, and Consistency.</p>
+            <p><a href="index.html" class="underline hover:text-sage-600">← Return to Main Portfolio</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function calculateCalories() {
+            const sex = document.getElementById('calc-sex').value;
+            const age = parseFloat(document.getElementById('calc-age').value) || 24;
+            const height = parseFloat(document.getElementById('calc-height').value) || 178;
+            const weight = parseFloat(document.getElementById('calc-weight').value) || 114;
+            const activity = parseFloat(document.getElementById('calc-activity').value) || 1.55;
+
+            let bmr = (10 * weight) + (6.25 * height) - (5 * age);
+            bmr = (sex === 'male') ? bmr + 5 : bmr - 161;
+
+            const tdee = Math.round(bmr * activity);
+            const fatLoss = Math.max(1200, tdee - 650);
+            const muscleGain = tdee + 250;
+
+            const proteinGrams = Math.round(weight * 1.4);
+            const fatGrams = Math.round(weight * 0.7);
+            const remainingCals = Math.max(400, fatLoss - (proteinGrams * 4) - (fatGrams * 9));
+            const carbGrams = Math.round(remainingCals / 4);
+
+            document.getElementById('res-bmr').innerText = Math.round(bmr).toLocaleString() + ' kcal';
+            document.getElementById('res-tdee').innerText = tdee.toLocaleString() + ' kcal';
+            document.getElementById('res-loss').innerText = fatLoss.toLocaleString() + ' kcal / day';
+            document.getElementById('res-gain').innerText = muscleGain.toLocaleString() + ' kcal / day';
+            document.getElementById('res-loss-macros').innerHTML = 
+                `Daily Target: <strong>${proteinGrams}g Protein</strong> • <strong>${fatGrams}g Fats</strong> • <strong>${carbGrams}g Carbs</strong>`;
+        }
+
+        function analyzeBloodReport() {
+            const vitd = parseFloat(document.getElementById('lab-vitd').value);
+            const b12 = parseFloat(document.getElementById('lab-b12').value);
+            const hb = parseFloat(document.getElementById('lab-hb').value);
+            const tsh = parseFloat(document.getElementById('lab-tsh').value);
+            const hba1c = parseFloat(document.getElementById('lab-hba1c').value);
+            const trig = parseFloat(document.getElementById('lab-trig').value);
+
+            const notes = [];
+
+            if (!isNaN(vitd)) {
+                if (vitd < 20) notes.push(`⚠️ <strong>Vitamin D (${vitd} ng/mL) is Low:</strong> Can cause fatigue, joint pain, and slower fat loss. Get morning sunlight and consult a doctor for D3 supplementation.`);
+                else if (vitd < 30) notes.push(`🔸 <strong>Vitamin D (${vitd} ng/mL) is Borderline:</strong> Aim for 30–60 ng/mL for optimal recovery.`);
+                else notes.push(`✅ <strong>Vitamin D (${vitd} ng/mL):</strong> Optimal level!`);
+            }
+
+            if (!isNaN(b12)) {
+                if (b12 < 300) notes.push(`⚠️ <strong>Vitamin B12 (${b12} pg/mL) Needs Attention:</strong> Low B12 causes tiredness and brain fog. Add curd, milk, whole eggs, or a B12 supplement.`);
+                else notes.push(`✅ <strong>Vitamin B12 (${b12} pg/mL):</strong> Great level for energy and nerves.`);
+            }
+
+            if (!isNaN(hb)) {
+                if (hb < 12.5) notes.push(`⚠️ <strong>Hemoglobin (${hb} g/dL) is Low:</strong> Reduces oxygen to muscles during cardio/weights. Check iron/ferritin levels.`);
+                else notes.push(`✅ <strong>Hemoglobin (${hb} g/dL):</strong> Healthy oxygen capacity.`);
+            }
+
+            if (!isNaN(tsh)) {
+                if (tsh > 4.2) notes.push(`⚠️ <strong>TSH (${tsh} mIU/L) is High:</strong> Indicates a slower thyroid metabolism, which can cause water retention. Consult a doctor.`);
+                else notes.push(`✅ <strong>TSH (${tsh} mIU/L):</strong> Healthy thyroid metabolism.`);
+            }
+
+            if (!isNaN(hba1c)) {
+                if (hba1c >= 5.7) notes.push(`⚠️ <strong>HbA1c (${hba1c}%) is Elevated:</strong> Focus on post-meal walks, strength training, and measured carbs.`);
+                else notes.push(`✅ <strong>HbA1c (${hba1c}%):</strong> Healthy blood sugar control.`);
+            }
+
+            if (!isNaN(trig)) {
+                if (trig >= 150) notes.push(`⚠️ <strong>Triglycerides (${trig} mg/dL) are High:</strong> Cut refined sugar, take Omega-3s, and stay consistent with daily walks.`);
+                else notes.push(`✅ <strong>Triglycerides (${trig} mg/dL):</strong> Healthy lipid level.`);
+            }
+
+            const out = document.getElementById('blood-results');
+            out.classList.remove('hidden');
+            out.innerHTML = notes.length ? notes.map(n => `<p>${n}</p>`).join('') : `<p>Please type at least one blood test number above first.</p>`;
+        }
+
+        calculateCalories();
+    </script>
+</body>
+</html>
